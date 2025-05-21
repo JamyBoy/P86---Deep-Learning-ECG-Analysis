@@ -1,0 +1,118 @@
+### Dataset Info
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 10646 entries, 0 to 10645
+Data columns (total 16 columns):
+ #   Column           Non-Null Count  Dtype 
+---  ------           --------------  ----- 
+ 0   FileName         10646 non-null  object
+ 1   Rhythm           10646 non-null  object
+ 2   Beat             10646 non-null  object
+ 3   PatientAge       10646 non-null  int64 
+ 4   Gender           10646 non-null  object
+ 5   VentricularRate  10646 non-null  int64 
+ 6   AtrialRate       10646 non-null  int64 
+ 7   QRSDuration      10646 non-null  int64 
+ 8   QTInterval       10646 non-null  int64 
+ 9   QTCorrected      10646 non-null  int64 
+ 10  RAxis            10646 non-null  int64 
+ 11  TAxis            10646 non-null  int64 
+ 12  QRSCount         10646 non-null  int64 
+ 13  QOnset           10646 non-null  int64 
+ 14  QOffset          10646 non-null  int64 
+ 15  TOffset          10646 non-null  int64 
+dtypes: int64(12), object(4)
+memory usage: 1.3+ MB
+
+
+### Basic Statistics
+
+                          FileName Rhythm   Beat    PatientAge Gender  \
+count                        10646  10646  10646  10646.000000  10646   
+unique                       10646     11    742           NaN      2   
+top     MUSE_20181222_204314_78000     SB   NONE           NaN   MALE   
+freq                             1   3889   5419           NaN   5956   
+mean                           NaN    NaN    NaN     59.186831    NaN   
+std                            NaN    NaN    NaN     18.030019    NaN   
+min                            NaN    NaN    NaN      4.000000    NaN   
+25%                            NaN    NaN    NaN     49.000000    NaN   
+50%                            NaN    NaN    NaN     62.000000    NaN   
+75%                            NaN    NaN    NaN     72.000000    NaN   
+max                            NaN    NaN    NaN     98.000000    NaN   
+
+        VentricularRate   AtrialRate   QRSDuration    QTInterval  \
+count      10646.000000  10646.00000  10646.000000  10646.000000   
+unique              NaN          NaN           NaN           NaN   
+top                 NaN          NaN           NaN           NaN   
+freq                NaN          NaN           NaN           NaN   
+mean          84.136107     92.57787     90.989292    384.150855   
+std           34.455349     60.09394     17.479540     59.226289   
+min           34.000000      0.00000     18.000000    114.000000   
+25%           57.000000     57.00000     80.000000    344.000000   
+50%           73.000000     72.00000     88.000000    390.000000   
+75%          104.000000    106.00000     98.000000    426.000000   
+max          263.000000    535.00000    256.000000    736.000000   
+
+         QTCorrected         RAxis         TAxis      QRSCount        QOnset  \
+count   10646.000000  10646.000000  10646.000000  10646.000000  10646.000000   
+unique           NaN           NaN           NaN           NaN           NaN   
+top              NaN           NaN           NaN           NaN           NaN   
+freq             NaN           NaN           NaN           NaN           NaN   
+mean      434.154048     39.620609     44.637704     13.839470    219.260567   
+std        39.354182     41.212648     57.478092      5.676339      6.410413   
+min       219.000000    -89.000000    -89.000000      5.000000    159.000000   
+25%       408.000000     14.000000     19.000000      9.000000    216.000000   
+50%       430.000000     46.000000     42.000000     12.000000    219.000000   
+75%       456.000000     68.000000     62.000000     17.000000    224.000000   
+max       760.000000    270.000000    270.000000     40.000000    240.000000   
+
+             QOffset       TOffset  
+count   10646.000000  10646.000000  
+unique           NaN           NaN  
+top              NaN           NaN  
+freq             NaN           NaN  
+mean      264.755213    411.335995  
+std         8.362120     29.777404  
+min       249.000000    281.000000  
+25%       259.000000    392.000000  
+50%       264.000000    414.000000  
+75%       268.000000    432.000000  
+max       331.000000    582.000000  
+
+### Missing Values (per column)
+
+FileName           0
+Rhythm             0
+Beat               0
+PatientAge         0
+Gender             0
+VentricularRate    0
+AtrialRate         0
+QRSDuration        0
+QTInterval         0
+QTCorrected        0
+RAxis              0
+TAxis              0
+QRSCount           0
+QOnset             0
+QOffset            0
+TOffset            0
+dtype: int64
+
+
+### FileName Checks
+Missing FileName: 0
+Duplicated FileName: 0
+
+### Outlier Detection (z-score > 3)
+PatientAge: Found 39 potential outliers
+VentricularRate: Found 140 potential outliers
+AtrialRate: Found 302 potential outliers
+QRSDuration: Found 239 potential outliers
+QTInterval: Found 53 potential outliers
+QTCorrected: Found 151 potential outliers
+RAxis: Found 75 potential outliers
+TAxis: Found 348 potential outliers
+QRSCount: Found 160 potential outliers
+QOnset: Found 76 potential outliers
+QOffset: Found 232 potential outliers
+TOffset: Found 46 potential outliers
