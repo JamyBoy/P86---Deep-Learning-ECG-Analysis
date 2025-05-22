@@ -1,0 +1,17 @@
+﻿Attributes,Type,ValueRange,Description
+FileName,String,,ECG data file name(unique ID)
+Rhythm,String,,Rhythm Label
+Beat,String,,Other conditions Label
+PatientAge,Numeric,0-999,Age
+Gender,String,MALE/FEMALE,Gender
+VentricularRate,Numeric,0-999,Ventricular rate in BPM
+AtrialRate,Numeric,0-999,Atrial rate in BPM
+QRSDuration,Numeric,0-999,QRS duration in msec
+QTInterval,Numeric,0-999,QT interval in msec
+QTCorrected,Numeric,0-999,Corrected QT interval in msec
+RAxis,Numeric,-179~180,R axis
+TAxis,Numeric,-179~181,T axis
+QRSCount,Numeric,0-254,QRS count
+QOnset,Numeric,16 Bit Unsigned,Q onset(In samples)
+QOffset,Numeric,17 Bit Unsigned,Q offset(In samples)
+TOffset,Numeric,18 Bit Unsigned,T offset(In samples)
